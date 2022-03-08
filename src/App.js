@@ -1,19 +1,15 @@
-import MealCard from "./components/MealCard/MealCard";
-import MealServices from './Services/api';
-import React, {useEffect} from "react";
+
+import React from "react";
+import Home from "./Pages/Home";
 
 
 
 function App() {
 
-  useEffect( async ()  =>{
-    let data =await MealServices.GetRandomMeal();
-    console.log(data);
-    
-  },[])
+ 
   return (
     <div >
-     <MealCard/>
+     <Home/>
     </div>
   );
 }
