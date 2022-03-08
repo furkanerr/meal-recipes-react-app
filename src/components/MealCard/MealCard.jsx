@@ -1,9 +1,12 @@
 import React from "react";
+import MealCardStyle from './MealCardStyle.css';
 
-const MealCard =() =>{
+
+const MealCard =({meal}) =>{
     return (
         <div className="Container">
-            Cart
+           <img className="mealImage" src={meal?.strMealThumb} />
+           <p className="mealName">{meal?.strMeal}</p>
         </div>
     )
 }
