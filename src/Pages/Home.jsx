@@ -3,23 +3,27 @@ import MealCard from "../components/MealCard/MealCard";
 import MealServices from '../Services/api';
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
 import HomeStyle from './HomeStyle.css';
+import SearchBar from "../components/SearchBar/SearchBar";
 
 
 const Home = () => {
 
-    const { isLoading, error, data } = useQuery('mealData',()=>MealServices.GetRandomMeal())
+    const { isLoading, error, data } = useQuery('mealData',()=>MealServices.GetMealByName("arr"))
     console.log(data)
     
   return (
-    <div>
+    <div className="Container">
+
+           <SearchBar/>
+
          <div className="cardContainer">
-        {
+        {/*{
            
-            data?.meals.map((meal)=>(
+            data?.meals?.map((meal)=>(
                 <MealCard key={meal?.idMeal} meal={meal} />        
             ))
            
-        }
+        }*/}
          </div>
         
 
