@@ -1,9 +1,19 @@
 
 
-
+.searchBarDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 .cardContainer{
+
+
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    grid-column-gap: 1rem;
     grid-row-gap: 2rem;
     display: grid;
+
+
+
 }
