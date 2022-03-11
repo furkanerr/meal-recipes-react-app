@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-.Container{
+.CardContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: bisque;
     align-items: center;
-    width: 10rem;
-    height: 10rem;
+    max-width: max-content;
+    border-radius: 10px;
     font-family: 'Roboto', sans-serif;
-    margin: 15px;
+
 
 }
 
